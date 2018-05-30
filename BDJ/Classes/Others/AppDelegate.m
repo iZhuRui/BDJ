@@ -7,11 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ZREssenceViewController.h"
-#import "ZRNewViewController.h"
-#import "ZRFriendTrendViewController.h"
-#import "ZRMeViewController.h"
-#import "ZRPublishViewController.h"
+#import "ZRTabBarController.h"
 
 /*
  优先级：LaunchScreen > LaunchImage
@@ -43,29 +39,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     //2.设置窗口根控制器
-    UITabBarController * tabBarVC = [[UITabBarController alloc] init];
+    ZRTabBarController * tabBarVC = [[ZRTabBarController alloc] init];
     self.window.rootViewController = tabBarVC;
-    
-    //2.1添加子控制器（五个子控制器） -> 自定义控制器  划分项目文件结构
-    // 精华
-    ZREssenceViewController * essenceVC = [[ZREssenceViewController alloc] init];
-    [tabBarVC addChildViewController:essenceVC];
-    
-    // 新帖
-    ZRNewViewController * newVC = [[ZRNewViewController alloc] init];
-    [tabBarVC addChildViewController:newVC];
-    
-    // 发布
-    ZRPublishViewController * publishVC = [[ZRPublishViewController alloc] init];
-    [tabBarVC addChildViewController:publishVC];
-    
-    // 关注
-    ZRFriendTrendViewController * friendTrendVC = [[ZRFriendTrendViewController alloc] init];
-    [tabBarVC addChildViewController:friendTrendVC];
-    
-    // 我
-    ZRMeViewController * meVC = [[ZRMeViewController alloc] init];
-    [tabBarVC addChildViewController:meVC]; 
     
     //3.显示窗口  1.成为UIApplication主窗口 2.
     [self.window makeKeyAndVisible];

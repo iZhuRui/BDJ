@@ -18,6 +18,8 @@
 		00BEFBAF20BE85D400204029 /* ZRNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBAE20BE85D400204029 /* ZRNewViewController.m */; };
 		00BEFBB220BE85E800204029 /* ZRMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBB120BE85E800204029 /* ZRMeViewController.m */; };
 		00BEFBB520BE85FF00204029 /* ZRFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBB420BE85FF00204029 /* ZRFriendTrendViewController.m */; };
+		00BEFBBC20BE9B2E00204029 /* ZRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBBB20BE9B2E00204029 /* ZRTabBarController.m */; };
+		00BEFBC020BEA00700204029 /* UIImage+ZRImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBBF20BEA00700204029 /* UIImage+ZRImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,10 @@
 		00BEFBB120BE85E800204029 /* ZRMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRMeViewController.m; sourceTree = "<group>"; };
 		00BEFBB320BE85FF00204029 /* ZRFriendTrendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRFriendTrendViewController.h; sourceTree = "<group>"; };
 		00BEFBB420BE85FF00204029 /* ZRFriendTrendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRFriendTrendViewController.m; sourceTree = "<group>"; };
+		00BEFBBA20BE9B2E00204029 /* ZRTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRTabBarController.h; sourceTree = "<group>"; };
+		00BEFBBB20BE9B2E00204029 /* ZRTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRTabBarController.m; sourceTree = "<group>"; };
+		00BEFBBE20BEA00700204029 /* UIImage+ZRImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZRImage.h"; sourceTree = "<group>"; };
+		00BEFBBF20BEA00700204029 /* UIImage+ZRImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZRImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,7 @@
 		00BEFB8320BE844E00204029 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				00BEFBB620BE9B0D00204029 /* Main_主要 */,
 				00BEFB8420BE844E00204029 /* FriendTrend_关注 */,
 				00BEFB8820BE844E00204029 /* Me_我 */,
 				00BEFB9020BE844E00204029 /* Essence_精华 */,
@@ -292,11 +299,54 @@
 		00BEFB9E20BE84F000204029 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				00BEFBBD20BE9F7E00204029 /* Category */,
 				00BEFB9F20BE84F000204029 /* AppDelegate.h */,
 				00BEFBA120BE84F000204029 /* AppDelegate.m */,
 				00BEFBA020BE84F000204029 /* main.m */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		00BEFBB620BE9B0D00204029 /* Main_主要 */ = {
+			isa = PBXGroup;
+			children = (
+				00BEFBB720BE9B0D00204029 /* Controller */,
+				00BEFBB820BE9B0D00204029 /* Model */,
+				00BEFBB920BE9B0D00204029 /* View */,
+			);
+			path = "Main_主要";
+			sourceTree = "<group>";
+		};
+		00BEFBB720BE9B0D00204029 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00BEFBBA20BE9B2E00204029 /* ZRTabBarController.h */,
+				00BEFBBB20BE9B2E00204029 /* ZRTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00BEFBB820BE9B0D00204029 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00BEFBB920BE9B0D00204029 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00BEFBBD20BE9F7E00204029 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				00BEFBBE20BEA00700204029 /* UIImage+ZRImage.h */,
+				00BEFBBF20BEA00700204029 /* UIImage+ZRImage.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,10 +453,12 @@
 				00BEFBA320BE84F000204029 /* AppDelegate.m in Sources */,
 				00BEFBA920BE85BF00204029 /* ZREssenceViewController.m in Sources */,
 				00BEFBAC20BE85CB00204029 /* ZRPublishViewController.m in Sources */,
+				00BEFBBC20BE9B2E00204029 /* ZRTabBarController.m in Sources */,
 				00BEFBB520BE85FF00204029 /* ZRFriendTrendViewController.m in Sources */,
 				00BEFBAF20BE85D400204029 /* ZRNewViewController.m in Sources */,
 				00BEFBB220BE85E800204029 /* ZRMeViewController.m in Sources */,
 				00BEFBA220BE84F000204029 /* main.m in Sources */,
+				00BEFBC020BEA00700204029 /* UIImage+ZRImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
