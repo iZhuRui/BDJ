@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ZRNewViewController.h
 //  BDJ
 //
 //  Created by edz on 2018/5/30.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ZRNewViewController : UIViewController
 
 @end
-

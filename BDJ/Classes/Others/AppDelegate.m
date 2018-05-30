@@ -7,11 +7,26 @@
 //
 
 #import "AppDelegate.h"
+#import "ZREssenceViewController.h"
+#import "ZRNewViewController.h"
+#import "ZRFriendTrendViewController.h"
+#import "ZRMeViewController.h"
+#import "ZRPublishViewController.h"
 
 /*
  优先级：LaunchScreen > LaunchImage
  如果通过LaunchImage设置启动界面，那么屏幕的可视范围由图片决定
  如果使用LaunchImage，必须提供各个尺寸的启动图片
+ 
+ LaunchScreen xcode6开始才有
+ LaunchScreen好处：1.自动识别当前真机或者模拟器的尺寸 2.只要让美工提供一个可拉伸图片 3.展示更多东西
+ 
+ LaunchScreen底层实现：把LaunchScreen截屏，生成一张图片，作为启动界面
+ 
+ */
+
+/*
+ 项目架构搭建：
  */
 
 @interface AppDelegate ()
@@ -20,9 +35,41 @@
 
 @implementation AppDelegate
 
-
+// 程序启动的时候就会调用
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //1.创建窗口
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    //2.设置窗口根控制器
+    UITabBarController * tabBarVC = [[UITabBarController alloc] init];
+    self.window.rootViewController = tabBarVC;
+    
+    //2.1添加子控制器（五个子控制器） -> 自定义控制器  划分项目文件结构
+    // 精华
+    ZREssenceViewController * essenceVC = [[ZREssenceViewController alloc] init];
+    [tabBarVC addChildViewController:essenceVC];
+    
+    // 新帖
+    ZRNewViewController * newVC = [[ZRNewViewController alloc] init];
+    [tabBarVC addChildViewController:newVC];
+    
+    // 发布
+    ZRPublishViewController * publishVC = [[ZRPublishViewController alloc] init];
+    [tabBarVC addChildViewController:publishVC];
+    
+    // 关注
+    ZRFriendTrendViewController * friendTrendVC = [[ZRFriendTrendViewController alloc] init];
+    [tabBarVC addChildViewController:friendTrendVC];
+    
+    // 我
+    ZRMeViewController * meVC = [[ZRMeViewController alloc] init];
+    [tabBarVC addChildViewController:meVC]; 
+    
+    //3.显示窗口  1.成为UIApplication主窗口 2.
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

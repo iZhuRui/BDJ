@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0070746420BE471E00C6E014 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0070746320BE471E00C6E014 /* AppDelegate.m */; };
-		0070746720BE471E00C6E014 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0070746620BE471E00C6E014 /* ViewController.m */; };
 		0070746A20BE471E00C6E014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0070746820BE471E00C6E014 /* Main.storyboard */; };
 		0070746C20BE472000C6E014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0070746B20BE472000C6E014 /* Assets.xcassets */; };
 		0070746F20BE472000C6E014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0070746D20BE472000C6E014 /* LaunchScreen.storyboard */; };
-		0070747220BE472000C6E014 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0070747120BE472000C6E014 /* main.m */; };
 		0070747C20BE472000C6E014 /* BDJUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0070747B20BE472000C6E014 /* BDJUITests.m */; };
+		00BEFBA220BE84F000204029 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBA020BE84F000204029 /* main.m */; };
+		00BEFBA320BE84F000204029 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBA120BE84F000204029 /* AppDelegate.m */; };
+		00BEFBA920BE85BF00204029 /* ZREssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBA820BE85BF00204029 /* ZREssenceViewController.m */; };
+		00BEFBAC20BE85CB00204029 /* ZRPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBAB20BE85CB00204029 /* ZRPublishViewController.m */; };
+		00BEFBAF20BE85D400204029 /* ZRNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBAE20BE85D400204029 /* ZRNewViewController.m */; };
+		00BEFBB220BE85E800204029 /* ZRMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBB120BE85E800204029 /* ZRMeViewController.m */; };
+		00BEFBB520BE85FF00204029 /* ZRFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBB420BE85FF00204029 /* ZRFriendTrendViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,18 +32,26 @@
 
 /* Begin PBXFileReference section */
 		0070745F20BE471E00C6E014 /* BDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0070746220BE471E00C6E014 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0070746320BE471E00C6E014 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0070746520BE471E00C6E014 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0070746620BE471E00C6E014 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0070746920BE471E00C6E014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0070746B20BE472000C6E014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0070746E20BE472000C6E014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0070747020BE472000C6E014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0070747120BE472000C6E014 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0070747720BE472000C6E014 /* BDJUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BDJUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0070747B20BE472000C6E014 /* BDJUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDJUITests.m; sourceTree = "<group>"; };
 		0070747D20BE472000C6E014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00BEFB9F20BE84F000204029 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00BEFBA020BE84F000204029 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00BEFBA120BE84F000204029 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00BEFBA720BE85BF00204029 /* ZREssenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZREssenceViewController.h; sourceTree = "<group>"; };
+		00BEFBA820BE85BF00204029 /* ZREssenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZREssenceViewController.m; sourceTree = "<group>"; };
+		00BEFBAA20BE85CB00204029 /* ZRPublishViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRPublishViewController.h; sourceTree = "<group>"; };
+		00BEFBAB20BE85CB00204029 /* ZRPublishViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRPublishViewController.m; sourceTree = "<group>"; };
+		00BEFBAD20BE85D400204029 /* ZRNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRNewViewController.h; sourceTree = "<group>"; };
+		00BEFBAE20BE85D400204029 /* ZRNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNewViewController.m; sourceTree = "<group>"; };
+		00BEFBB020BE85E800204029 /* ZRMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRMeViewController.h; sourceTree = "<group>"; };
+		00BEFBB120BE85E800204029 /* ZRMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRMeViewController.m; sourceTree = "<group>"; };
+		00BEFBB320BE85FF00204029 /* ZRFriendTrendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRFriendTrendViewController.h; sourceTree = "<group>"; };
+		00BEFBB420BE85FF00204029 /* ZRFriendTrendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRFriendTrendViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,15 +93,11 @@
 		0070746120BE471E00C6E014 /* BDJ */ = {
 			isa = PBXGroup;
 			children = (
-				0070746220BE471E00C6E014 /* AppDelegate.h */,
-				0070746320BE471E00C6E014 /* AppDelegate.m */,
-				0070746520BE471E00C6E014 /* ViewController.h */,
-				0070746620BE471E00C6E014 /* ViewController.m */,
+				00BEFB8320BE844E00204029 /* Classes */,
 				0070746820BE471E00C6E014 /* Main.storyboard */,
 				0070746B20BE472000C6E014 /* Assets.xcassets */,
 				0070746D20BE472000C6E014 /* LaunchScreen.storyboard */,
 				0070747020BE472000C6E014 /* Info.plist */,
-				0070747120BE472000C6E014 /* main.m */,
 			);
 			path = BDJ;
 			sourceTree = "<group>";
@@ -101,6 +109,194 @@
 				0070747D20BE472000C6E014 /* Info.plist */,
 			);
 			path = BDJUITests;
+			sourceTree = "<group>";
+		};
+		00BEFB8320BE844E00204029 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				00BEFB8420BE844E00204029 /* FriendTrend_关注 */,
+				00BEFB8820BE844E00204029 /* Me_我 */,
+				00BEFB9020BE844E00204029 /* Essence_精华 */,
+				00BEFB9420BE844E00204029 /* Publish_发布 */,
+				00BEFB9820BE844E00204029 /* New_新帖 */,
+				00BEFB9E20BE84F000204029 /* Others */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		00BEFB8420BE844E00204029 /* FriendTrend_关注 */ = {
+			isa = PBXGroup;
+			children = (
+				00BEFB8520BE844E00204029 /* Controller */,
+				00BEFB8620BE844E00204029 /* Model */,
+				00BEFB8720BE844E00204029 /* View */,
+			);
+			path = "FriendTrend_关注";
+			sourceTree = "<group>";
+		};
+		00BEFB8520BE844E00204029 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00BEFBB320BE85FF00204029 /* ZRFriendTrendViewController.h */,
+				00BEFBB420BE85FF00204029 /* ZRFriendTrendViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00BEFB8620BE844E00204029 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00BEFB8720BE844E00204029 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00BEFB8820BE844E00204029 /* Me_我 */ = {
+			isa = PBXGroup;
+			children = (
+				00BEFB8920BE844E00204029 /* Controller */,
+				00BEFB8A20BE844E00204029 /* Model */,
+				00BEFB8B20BE844E00204029 /* View */,
+			);
+			path = "Me_我";
+			sourceTree = "<group>";
+		};
+		00BEFB8920BE844E00204029 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00BEFBB020BE85E800204029 /* ZRMeViewController.h */,
+				00BEFBB120BE85E800204029 /* ZRMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00BEFB8A20BE844E00204029 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00BEFB8B20BE844E00204029 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00BEFB9020BE844E00204029 /* Essence_精华 */ = {
+			isa = PBXGroup;
+			children = (
+				00BEFB9120BE844E00204029 /* Controller */,
+				00BEFB9220BE844E00204029 /* Model */,
+				00BEFB9320BE844E00204029 /* View */,
+			);
+			path = "Essence_精华";
+			sourceTree = "<group>";
+		};
+		00BEFB9120BE844E00204029 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00BEFBA720BE85BF00204029 /* ZREssenceViewController.h */,
+				00BEFBA820BE85BF00204029 /* ZREssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00BEFB9220BE844E00204029 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00BEFB9320BE844E00204029 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00BEFB9420BE844E00204029 /* Publish_发布 */ = {
+			isa = PBXGroup;
+			children = (
+				00BEFB9520BE844E00204029 /* Controller */,
+				00BEFB9620BE844E00204029 /* Model */,
+				00BEFB9720BE844E00204029 /* View */,
+			);
+			path = "Publish_发布";
+			sourceTree = "<group>";
+		};
+		00BEFB9520BE844E00204029 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00BEFBAA20BE85CB00204029 /* ZRPublishViewController.h */,
+				00BEFBAB20BE85CB00204029 /* ZRPublishViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00BEFB9620BE844E00204029 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00BEFB9720BE844E00204029 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00BEFB9820BE844E00204029 /* New_新帖 */ = {
+			isa = PBXGroup;
+			children = (
+				00BEFB9920BE844E00204029 /* Controller */,
+				00BEFB9A20BE844E00204029 /* Model */,
+				00BEFB9B20BE844E00204029 /* View */,
+			);
+			path = "New_新帖";
+			sourceTree = "<group>";
+		};
+		00BEFB9920BE844E00204029 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00BEFBAD20BE85D400204029 /* ZRNewViewController.h */,
+				00BEFBAE20BE85D400204029 /* ZRNewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00BEFB9A20BE844E00204029 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00BEFB9B20BE844E00204029 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00BEFB9E20BE84F000204029 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				00BEFB9F20BE84F000204029 /* AppDelegate.h */,
+				00BEFBA120BE84F000204029 /* AppDelegate.m */,
+				00BEFBA020BE84F000204029 /* main.m */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +400,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0070746720BE471E00C6E014 /* ViewController.m in Sources */,
-				0070747220BE472000C6E014 /* main.m in Sources */,
-				0070746420BE471E00C6E014 /* AppDelegate.m in Sources */,
+				00BEFBA320BE84F000204029 /* AppDelegate.m in Sources */,
+				00BEFBA920BE85BF00204029 /* ZREssenceViewController.m in Sources */,
+				00BEFBAC20BE85CB00204029 /* ZRPublishViewController.m in Sources */,
+				00BEFBB520BE85FF00204029 /* ZRFriendTrendViewController.m in Sources */,
+				00BEFBAF20BE85D400204029 /* ZRNewViewController.m in Sources */,
+				00BEFBB220BE85E800204029 /* ZRMeViewController.m in Sources */,
+				00BEFBA220BE84F000204029 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
