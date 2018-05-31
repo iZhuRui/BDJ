@@ -24,6 +24,7 @@
 		00D00FA720BFCD5A00D0F3B1 /* UIView+ZRFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D00FA620BFCD5A00D0F3B1 /* UIView+ZRFrame.m */; };
 		00D00FAB20BFEAB700D0F3B1 /* UIBarButtonItem+ZRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D00FAA20BFEAB700D0F3B1 /* UIBarButtonItem+ZRItem.m */; };
 		00D00FAE20BFF53F00D0F3B1 /* ZRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D00FAD20BFF53F00D0F3B1 /* ZRNavigationController.m */; };
+		7060E9F920C05E4600B19639 /* ZREssenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7060E9F820C05E4600B19639 /* ZREssenceModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		00D00FAA20BFEAB700D0F3B1 /* UIBarButtonItem+ZRItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ZRItem.m"; sourceTree = "<group>"; };
 		00D00FAC20BFF53F00D0F3B1 /* ZRNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRNavigationController.h; sourceTree = "<group>"; };
 		00D00FAD20BFF53F00D0F3B1 /* ZRNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNavigationController.m; sourceTree = "<group>"; };
+		7060E9F720C05E4600B19639 /* ZREssenceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZREssenceModel.h; sourceTree = "<group>"; };
+		7060E9F820C05E4600B19639 /* ZREssenceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZREssenceModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +218,7 @@
 			children = (
 				00BEFB9120BE844E00204029 /* Controller */,
 				00BEFB9220BE844E00204029 /* Model */,
+				7060E9F620C05E3900B19639 /* Model */,
 				00BEFB9320BE844E00204029 /* View */,
 			);
 			path = "Essence_精华";
@@ -371,6 +375,15 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		7060E9F620C05E3900B19639 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7060E9F720C05E4600B19639 /* ZREssenceModel.h */,
+				7060E9F820C05E4600B19639 /* ZREssenceModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -472,6 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7060E9F920C05E4600B19639 /* ZREssenceModel.m in Sources */,
 				00BEFBA320BE84F000204029 /* AppDelegate.m in Sources */,
 				00BEFBA920BE85BF00204029 /* ZREssenceViewController.m in Sources */,
 				00D00FAE20BFF53F00D0F3B1 /* ZRNavigationController.m in Sources */,
