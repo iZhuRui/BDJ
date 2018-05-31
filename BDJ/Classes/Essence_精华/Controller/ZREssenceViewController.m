@@ -22,6 +22,8 @@
     [self setupNavigationBar];
     
     
+    ZRFUNC;
+    
 }
 
 - (void)setupNavigationBar
