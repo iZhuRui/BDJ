@@ -17,21 +17,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self setupNavigationBar];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupNavigationBar
+{
+    
+    /*
+     UIBarButtonItem 描述按钮具体的内容
+     UINavigationBarItem 设置导航条上内容（左边右边中间）
+     tabBarItem 设置tabBar上按钮内容（tabBarButton）
+     */
+    
+    // 左边、右边按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImagename:@"friendsRecommentIcon" highlightImagename:@"friendsRecommentIcon-click" target:self action:@selector(recommend)];
+        
+    // titleView
+    // initWithImage好处：默认imageView尺寸跟图片一样大
+    self.navigationItem.title = @"我的关注";
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)recommend
+{
+    ZRFUNC;
 }
-*/
 
 @end

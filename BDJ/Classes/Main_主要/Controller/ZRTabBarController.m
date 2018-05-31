@@ -13,6 +13,8 @@
 #import "ZRMeViewController.h"
 #import "ZRPublishViewController.h"
 #import "UIImage+ZRImage.h"
+#import "ZRTabBar.h"
+#import "ZRNavigationController.h"
 
 @interface ZRTabBarController ()
 
@@ -28,7 +30,8 @@
                   -> 系统的tabBarButton没有提供高亮图片状态，因此做不了示例程序效果
                   -> 加号按钮应该是普通按钮，才有高亮状态 -> 发布控制器不是tabBarController的子控制器
  4.最终方案：调整系统tabBar上按钮位置，平均分成五等分，把加号按钮放中间
- 调整系统自带控件的子控件的位置
+ 调整系统自带控件的子控件的位置 -> 自定义tabBar -> 使用tabBar
+ 研究系统的tabBarButton什么时候添加到self.tabBar上 -> viewWillAppear的时候
  */
 
 // 只会调用一次
@@ -69,77 +72,97 @@
 //    }
 //}
 
+//-(void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//
+//    NSLog(@"%@",self.tabBar.subviews);
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     //2.1添加子控制器（五个子控制器） -> 自定义控制器  划分项目文件结构
+    [self setupChildViewController];
+    
+    // 2.2设置tabBar上按钮内容 -> 由对应的子控制器的tabBarItem属性
+    [self setuptabBarButtons];
+    
+    [self setuptabBar];
+}
+
+- (void)setupChildViewController
+{
     // 精华
     ZREssenceViewController * essenceVC = [[ZREssenceViewController alloc] init];
-    UINavigationController * nav1 = [[UINavigationController alloc] initWithRootViewController:essenceVC];
+    ZRNavigationController * nav1 = [[ZRNavigationController alloc] initWithRootViewController:essenceVC];
     [self addChildViewController:nav1];
     
     // 新帖
     ZRNewViewController * newVC = [[ZRNewViewController alloc] init];
-    UINavigationController * nav2 = [[UINavigationController alloc] initWithRootViewController:newVC];
+    ZRNavigationController * nav2 = [[ZRNavigationController alloc] initWithRootViewController:newVC];
     [self addChildViewController:nav2];
     
     // 发布
     // 发布按钮不是tabBarButton，ZRPublishViewController没有必有成为tabBarController子控制器
-    ZRPublishViewController * publishVC = [[ZRPublishViewController alloc] init];
-    [self addChildViewController:publishVC];
+//    ZRPublishViewController * publishVC = [[ZRPublishViewController alloc] init];
+//    [self addChildViewController:publishVC];
     
     // 关注
     ZRFriendTrendViewController * friendTrendVC = [[ZRFriendTrendViewController alloc] init];
-    UINavigationController * nav3 = [[UINavigationController alloc] initWithRootViewController:friendTrendVC];
+    ZRNavigationController * nav3 = [[ZRNavigationController alloc] initWithRootViewController:friendTrendVC];
     [self addChildViewController:nav3];
     
     // 我
     ZRMeViewController * meVC = [[ZRMeViewController alloc] init];
-    UINavigationController * nav4 = [[UINavigationController alloc] initWithRootViewController:meVC];
+    ZRNavigationController * nav4 = [[ZRNavigationController alloc] initWithRootViewController:meVC];
     [self addChildViewController:nav4];
+}
+
+- (void)setuptabBarButtons
+{
     
-    // 2.2设置tabBar上按钮内容 -> 由对应的子控制器的tabBarItem属性
     // 0:nav1
+    ZRNavigationController * nav1 = self.childViewControllers[0];
     nav1.tabBarItem.title = @"精华";
-    nav1.tabBarItem.image = [UIImage imageNamed:@"tabBar_essence_icon"];
+    nav1.tabBarItem.image = ZRImageName(@"tabBar_essence_icon");
     nav1.tabBarItem.selectedImage = [UIImage imageOriginalWithName:@"tabBar_essence_click_icon"];
     
     // 1:nav2
+    ZRNavigationController * nav2 = self.childViewControllers[1];
     nav2.tabBarItem.title = @"新帖";
-    nav2.tabBarItem.image = [UIImage imageNamed:@"tabBar_new_icon"];
+    nav2.tabBarItem.image = ZRImageName(@"tabBar_new_icon");
     nav2.tabBarItem.selectedImage = [UIImage imageOriginalWithName:@"tabBar_new_click_icon"];
     
     // 2:publish
-    publishVC.tabBarItem.image = [UIImage imageOriginalWithName:@"tabBar_publish_icon"];
-    publishVC.tabBarItem.selectedImage = [UIImage imageOriginalWithName:@"tabBar_publish_click_icon"];
-    // 设置图片位置
-    publishVC.tabBarItem.imageInsets = UIEdgeInsetsMake(7, 0, -7, 0);
+//    publishVC.tabBarItem.image = [UIImage imageOriginalWithName:@"tabBar_publish_icon"];
+//    publishVC.tabBarItem.selectedImage = [UIImage imageOriginalWithName:@"tabBar_publish_click_icon"];
+//    // 设置图片位置
+//    publishVC.tabBarItem.imageInsets = UIEdgeInsetsMake(7, 0, -7, 0);
     
     // 3:nav3
+    ZRNavigationController * nav3 = self.childViewControllers[2];
     nav3.tabBarItem.title = @"关注";
-    nav3.tabBarItem.image = [UIImage imageNamed:@"tabBar_friendTrends_icon"];
+    nav3.tabBarItem.image = ZRImageName(@"tabBar_friendTrends_icon");
     nav3.tabBarItem.selectedImage = [UIImage imageOriginalWithName:@"tabBar_friendTrends_click_icon"];
     
     // 4:nav4
+    ZRNavigationController * nav4 = self.childViewControllers[3];
     nav4.tabBarItem.title = @"我";
-    nav4.tabBarItem.image = [UIImage imageNamed:@"tabBar_me_icon"];
+    nav4.tabBarItem.image = ZRImageName(@"tabBar_me_icon");
     nav4.tabBarItem.selectedImage = [UIImage imageOriginalWithName:@"tabBar_me_click_icon"];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setuptabBar
+{
+    ZRTabBar * tabBar = [[ZRTabBar alloc] init];
+    
+    // @property(nonatomic,readonly) UITabBar *tabBar
+    // .tabBar生成set方法，不能设置readonly的UITabBar，能使用KVC和runtime
+    [self setValue:tabBar forKeyPath:@"tabBar"];
+    // 通过访问属性赋值，不是通过set方法
+    
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

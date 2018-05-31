@@ -22,11 +22,39 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self setupNavigationBar];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupNavigationBar
+{
+    
+    /*
+     UIBarButtonItem 描述按钮具体的内容
+     UINavigationBarItem 设置导航条上内容（左边右边中间）
+     tabBarItem 设置tabBar上按钮内容（tabBarButton）
+     */
+    
+    // 左边、右边按钮
+    UIBarButtonItem * settingItem = [UIBarButtonItem itemWithImagename:@"mine-setting-icon" highlightImagename:@"mine-setting-icon-click" target:self action:@selector(setting)];
+    
+    UIBarButtonItem * nightItem = [UIBarButtonItem itemWithImagename:@"mine-moon-icon" selectImagename:@"mine-moon-icon-click" target:self action:@selector(night:)];
+    
+    self.navigationItem.rightBarButtonItems = @[settingItem,nightItem];
+    
+    // titleView
+    self.navigationItem.title = @"我的";
+
+}
+
+- (void)setting
+{
+    ZRFUNC;
+}
+
+- (void)night:(UIButton *)sender
+{
+    sender.selected = !sender.selected;
+    ZRFUNC;
 }
 
 #pragma mark - Table view data source

@@ -17,22 +17,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
+    
+    // 设置导航条
+    [self setupNavigationBar];
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupNavigationBar
+{
+    
+    /*
+     UIBarButtonItem 描述按钮具体的内容
+     UINavigationBarItem 设置导航条上内容（左边右边中间）
+     tabBarItem 设置tabBar上按钮内容（tabBarButton）
+     */
+    
+    // 左边、右边按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImagename:@"nav_item_game_icon" highlightImagename:@"nav_item_game_click_icon" target:self action:@selector(game)];
+    
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImagename:@"navigationButtonRandom" highlightImagename:@"navigationButtonRandomClick" target:self action:@selector(random)];
+    
+    // titleView
+    // initWithImage好处：默认imageView尺寸跟图片一样大
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:ZRImageName(@"MainTitle")];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)game
+{
+    ZRFUNC;
 }
-*/
+
+- (void)random
+{
+    ZRFUNC;
+}
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004EB65120BF8E0F0094D5D9 /* ZRTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 004EB65020BF8E0F0094D5D9 /* ZRTabBar.m */; };
 		0070746A20BE471E00C6E014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0070746820BE471E00C6E014 /* Main.storyboard */; };
 		0070746C20BE472000C6E014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0070746B20BE472000C6E014 /* Assets.xcassets */; };
 		0070746F20BE472000C6E014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0070746D20BE472000C6E014 /* LaunchScreen.storyboard */; };
@@ -20,6 +21,9 @@
 		00BEFBB520BE85FF00204029 /* ZRFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBB420BE85FF00204029 /* ZRFriendTrendViewController.m */; };
 		00BEFBBC20BE9B2E00204029 /* ZRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBBB20BE9B2E00204029 /* ZRTabBarController.m */; };
 		00BEFBC020BEA00700204029 /* UIImage+ZRImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBBF20BEA00700204029 /* UIImage+ZRImage.m */; };
+		00D00FA720BFCD5A00D0F3B1 /* UIView+ZRFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D00FA620BFCD5A00D0F3B1 /* UIView+ZRFrame.m */; };
+		00D00FAB20BFEAB700D0F3B1 /* UIBarButtonItem+ZRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D00FAA20BFEAB700D0F3B1 /* UIBarButtonItem+ZRItem.m */; };
+		00D00FAE20BFF53F00D0F3B1 /* ZRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D00FAD20BFF53F00D0F3B1 /* ZRNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		004EB64F20BF8E0F0094D5D9 /* ZRTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRTabBar.h; sourceTree = "<group>"; };
+		004EB65020BF8E0F0094D5D9 /* ZRTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRTabBar.m; sourceTree = "<group>"; };
 		0070745F20BE471E00C6E014 /* BDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0070746920BE471E00C6E014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0070746B20BE472000C6E014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +64,13 @@
 		00BEFBBB20BE9B2E00204029 /* ZRTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRTabBarController.m; sourceTree = "<group>"; };
 		00BEFBBE20BEA00700204029 /* UIImage+ZRImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZRImage.h"; sourceTree = "<group>"; };
 		00BEFBBF20BEA00700204029 /* UIImage+ZRImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZRImage.m"; sourceTree = "<group>"; };
+		00D00FA520BFCD5A00D0F3B1 /* UIView+ZRFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ZRFrame.h"; sourceTree = "<group>"; };
+		00D00FA620BFCD5A00D0F3B1 /* UIView+ZRFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZRFrame.m"; sourceTree = "<group>"; };
+		00D00FA820BFD32C00D0F3B1 /* BDJ.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDJ.pch; sourceTree = "<group>"; };
+		00D00FA920BFEAB700D0F3B1 /* UIBarButtonItem+ZRItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ZRItem.h"; sourceTree = "<group>"; };
+		00D00FAA20BFEAB700D0F3B1 /* UIBarButtonItem+ZRItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ZRItem.m"; sourceTree = "<group>"; };
+		00D00FAC20BFF53F00D0F3B1 /* ZRNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRNavigationController.h; sourceTree = "<group>"; };
+		00D00FAD20BFF53F00D0F3B1 /* ZRNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +316,7 @@
 				00BEFB9F20BE84F000204029 /* AppDelegate.h */,
 				00BEFBA120BE84F000204029 /* AppDelegate.m */,
 				00BEFBA020BE84F000204029 /* main.m */,
+				00D00FA820BFD32C00D0F3B1 /* BDJ.pch */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -322,6 +336,8 @@
 			children = (
 				00BEFBBA20BE9B2E00204029 /* ZRTabBarController.h */,
 				00BEFBBB20BE9B2E00204029 /* ZRTabBarController.m */,
+				00D00FAC20BFF53F00D0F3B1 /* ZRNavigationController.h */,
+				00D00FAD20BFF53F00D0F3B1 /* ZRNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -336,6 +352,8 @@
 		00BEFBB920BE9B0D00204029 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				004EB64F20BF8E0F0094D5D9 /* ZRTabBar.h */,
+				004EB65020BF8E0F0094D5D9 /* ZRTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -345,6 +363,10 @@
 			children = (
 				00BEFBBE20BEA00700204029 /* UIImage+ZRImage.h */,
 				00BEFBBF20BEA00700204029 /* UIImage+ZRImage.m */,
+				00D00FA520BFCD5A00D0F3B1 /* UIView+ZRFrame.h */,
+				00D00FA620BFCD5A00D0F3B1 /* UIView+ZRFrame.m */,
+				00D00FA920BFEAB700D0F3B1 /* UIBarButtonItem+ZRItem.h */,
+				00D00FAA20BFEAB700D0F3B1 /* UIBarButtonItem+ZRItem.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -452,13 +474,17 @@
 			files = (
 				00BEFBA320BE84F000204029 /* AppDelegate.m in Sources */,
 				00BEFBA920BE85BF00204029 /* ZREssenceViewController.m in Sources */,
+				00D00FAE20BFF53F00D0F3B1 /* ZRNavigationController.m in Sources */,
 				00BEFBAC20BE85CB00204029 /* ZRPublishViewController.m in Sources */,
+				004EB65120BF8E0F0094D5D9 /* ZRTabBar.m in Sources */,
 				00BEFBBC20BE9B2E00204029 /* ZRTabBarController.m in Sources */,
 				00BEFBB520BE85FF00204029 /* ZRFriendTrendViewController.m in Sources */,
 				00BEFBAF20BE85D400204029 /* ZRNewViewController.m in Sources */,
+				00D00FA720BFCD5A00D0F3B1 /* UIView+ZRFrame.m in Sources */,
 				00BEFBB220BE85E800204029 /* ZRMeViewController.m in Sources */,
 				00BEFBA220BE84F000204029 /* main.m in Sources */,
 				00BEFBC020BEA00700204029 /* UIImage+ZRImage.m in Sources */,
+				00D00FAB20BFEAB700D0F3B1 /* UIBarButtonItem+ZRItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +643,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54HLUGJWUY;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BDJ/Classes/Others/BDJ.pch";
 				INFOPLIST_FILE = BDJ/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -636,6 +664,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54HLUGJWUY;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BDJ/Classes/Others/BDJ.pch";
 				INFOPLIST_FILE = BDJ/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

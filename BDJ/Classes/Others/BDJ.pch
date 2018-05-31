@@ -1,0 +1,42 @@
+//
+//  BDJ.pch
+//  BDJ
+//
+//  Created by edz on 2018/5/31.
+//  Copyright © 2018年 edz. All rights reserved.
+//
+
+//#ifndef BDJ_pch
+//#define BDJ_pch
+//
+//
+//// Include any system framework and library headers here that should be included in all compilation units.
+//// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//
+//#endif /* BDJ_pch */
+
+/*
+ PCH文件会导致预编译时间过长，所有的东西都要被所有文件共享，一些不需要的类也导入了，所有的头文件、宏都要被导入
+ 
+ PCH步骤：1.提前编译PCH
+ 
+ 用处
+ 1.存放公用宏
+ 2.存放公用头文件
+ 3.自定义Log
+ 
+ 配置Precompile Prefix Header为YES。这样预编译后的pch文件会被缓存起来，可以提高编译速度
+ */
+
+#import "UIView+ZRFrame.h"
+#import "UIBarButtonItem+ZRItem.h"
+
+#ifdef DEBUG // 调试
+#define ZRLog(...) NSLog(__VA_ARGS__)
+#else // 发布
+#define ZRLog(...)
+#endif
+
+#define ZRFUNC ZRLog(@"%s",__func__)
+#define ZRImageName(name) [UIImage imageNamed:name]
+#define ZRFont(float) [UIFont systemFontOfSize:(float)]

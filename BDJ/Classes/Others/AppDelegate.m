@@ -37,6 +37,7 @@
     
     //1.创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
     
     //2.设置窗口根控制器
     ZRTabBarController * tabBarVC = [[ZRTabBarController alloc] init];
