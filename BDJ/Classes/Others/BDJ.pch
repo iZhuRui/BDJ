@@ -40,3 +40,13 @@
 #define ZRFUNC ZRLog(@"%s",__func__)
 #define ZRImageName(name) [UIImage imageNamed:name]
 #define ZRFont(float) [UIFont systemFontOfSize:(float)]
+
+/*******************屏幕适配*******************/
+#define ZRScreenW [UIScreen mainScreen].bounds.size.width
+#define ZRScreenH [UIScreen mainScreen].bounds.size.height
+#define iPhone6P (ZRScreenH == 736)
+#define iPhone6 (ZRScreenH == 667)
+#define iPhone5 (ZRScreenH == 568)
+#define iPhone4 (ZRScreenH == 480)
+/*******************屏幕适配*******************/
+

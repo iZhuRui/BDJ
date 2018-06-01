@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ZRTabBarController.h"
+#import "ZRADViewController.h"
 
 /*
  优先级：LaunchScreen > LaunchImage
@@ -22,9 +23,18 @@
  */
 
 /*
- 项目架构搭建：
+ 项目架构搭建：主流结构（UITabBarController + 导航控制器）
+ -> 项目开发方式 1.storyboard 2.纯代码
  */
 
+
+/*
+ 每次程序启动的时候启动广告
+ 1.在启动的时候，去加载广告界面
+ 2.启动完成的时候，加载广告界面（展示了启动图片）
+    1.程序一启动就进入广告界面，窗口的根控制器设置为广告控制器
+    2.直接往窗口上再加上一个广告界面，等几秒过去，再把广告界面移除（广告页面的业务逻辑控制器谁去管理？）
+ */
 @interface AppDelegate ()
 
 @end
@@ -40,8 +50,10 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     //2.设置窗口根控制器
-    ZRTabBarController * tabBarVC = [[ZRTabBarController alloc] init];
-    self.window.rootViewController = tabBarVC;
+//    ZRTabBarController * tabBarVC = [[ZRTabBarController alloc] init];
+    ZRADViewController * adVC = [[ZRADViewController alloc] init];
+    // init -> initWithNibName   1.首先判断有没有指定nibName 2.判断下有没有跟类名同名xib
+    self.window.rootViewController = adVC;
     
     //3.显示窗口  1.成为UIApplication主窗口 2.
     [self.window makeKeyAndVisible];

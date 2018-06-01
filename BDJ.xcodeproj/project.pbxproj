@@ -12,6 +12,15 @@
 		0070746C20BE472000C6E014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0070746B20BE472000C6E014 /* Assets.xcassets */; };
 		0070746F20BE472000C6E014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0070746D20BE472000C6E014 /* LaunchScreen.storyboard */; };
 		0070747C20BE472000C6E014 /* BDJUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0070747B20BE472000C6E014 /* BDJUITests.m */; };
+		00AB971520C0E2E90072F9C8 /* ZRSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AB971420C0E2E90072F9C8 /* ZRSettingViewController.m */; };
+		00AB971C20C120E20072F9C8 /* ZRADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AB971B20C120E20072F9C8 /* ZRADViewController.m */; };
+		00AB971E20C123FA0072F9C8 /* ZRADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00AB971D20C123FA0072F9C8 /* ZRADViewController.xib */; };
+		00AB972520C12B040072F9C8 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AB972020C12B030072F9C8 /* LaunchImage-568h@2x.png */; };
+		00AB972620C12B040072F9C8 /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AB972120C12B030072F9C8 /* LaunchImage-800-667h@2x.png */; };
+		00AB972720C12B040072F9C8 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AB972220C12B030072F9C8 /* LaunchImage-800-Portrait-736h@3x.png */; };
+		00AB972820C12B040072F9C8 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AB972320C12B030072F9C8 /* LaunchImage-700@2x.png */; };
+		00AB972920C12B040072F9C8 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AB972420C12B030072F9C8 /* LaunchImage.png */; };
+		00AB972C20C152800072F9C8 /* ZRADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AB972B20C152800072F9C8 /* ZRADItem.m */; };
 		00BEFBA220BE84F000204029 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBA020BE84F000204029 /* main.m */; };
 		00BEFBA320BE84F000204029 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBA120BE84F000204029 /* AppDelegate.m */; };
 		00BEFBA920BE85BF00204029 /* ZREssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BEFBA820BE85BF00204029 /* ZREssenceViewController.m */; };
@@ -25,6 +34,7 @@
 		00D00FAB20BFEAB700D0F3B1 /* UIBarButtonItem+ZRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D00FAA20BFEAB700D0F3B1 /* UIBarButtonItem+ZRItem.m */; };
 		00D00FAE20BFF53F00D0F3B1 /* ZRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D00FAD20BFF53F00D0F3B1 /* ZRNavigationController.m */; };
 		7060E9F920C05E4600B19639 /* ZREssenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7060E9F820C05E4600B19639 /* ZREssenceModel.m */; };
+		943EF68122AEE6C5745BB624 /* libPods-BDJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3B2D5607CEDE13786D98ED /* libPods-BDJ.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +58,18 @@
 		0070747720BE472000C6E014 /* BDJUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BDJUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0070747B20BE472000C6E014 /* BDJUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDJUITests.m; sourceTree = "<group>"; };
 		0070747D20BE472000C6E014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00AB971320C0E2E90072F9C8 /* ZRSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRSettingViewController.h; sourceTree = "<group>"; };
+		00AB971420C0E2E90072F9C8 /* ZRSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRSettingViewController.m; sourceTree = "<group>"; };
+		00AB971A20C120E20072F9C8 /* ZRADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRADViewController.h; sourceTree = "<group>"; };
+		00AB971B20C120E20072F9C8 /* ZRADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRADViewController.m; sourceTree = "<group>"; };
+		00AB971D20C123FA0072F9C8 /* ZRADViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZRADViewController.xib; sourceTree = "<group>"; };
+		00AB972020C12B030072F9C8 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		00AB972120C12B030072F9C8 /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		00AB972220C12B030072F9C8 /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		00AB972320C12B030072F9C8 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		00AB972420C12B030072F9C8 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		00AB972A20C152800072F9C8 /* ZRADItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRADItem.h; sourceTree = "<group>"; };
+		00AB972B20C152800072F9C8 /* ZRADItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRADItem.m; sourceTree = "<group>"; };
 		00BEFB9F20BE84F000204029 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00BEFBA020BE84F000204029 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00BEFBA120BE84F000204029 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +96,9 @@
 		00D00FAD20BFF53F00D0F3B1 /* ZRNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRNavigationController.m; sourceTree = "<group>"; };
 		7060E9F720C05E4600B19639 /* ZREssenceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZREssenceModel.h; sourceTree = "<group>"; };
 		7060E9F820C05E4600B19639 /* ZREssenceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZREssenceModel.m; sourceTree = "<group>"; };
+		9B1544DF8F8AF24551ED1473 /* Pods-BDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDJ/Pods-BDJ.debug.xcconfig"; sourceTree = "<group>"; };
+		AF3B2D5607CEDE13786D98ED /* libPods-BDJ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BDJ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEB9454F997921B33B38F25 /* Pods-BDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDJ/Pods-BDJ.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				943EF68122AEE6C5745BB624 /* libPods-BDJ.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +126,8 @@
 				0070746120BE471E00C6E014 /* BDJ */,
 				0070747A20BE472000C6E014 /* BDJUITests */,
 				0070746020BE471E00C6E014 /* Products */,
+				96BDC38B82BBAABAF5864FBF /* Pods */,
+				537C0CE0D2FE3CAD9EB59F04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				00BEFB8320BE844E00204029 /* Classes */,
+				00AB971F20C12B030072F9C8 /* launchImage */,
 				0070746820BE471E00C6E014 /* Main.storyboard */,
 				0070746B20BE472000C6E014 /* Assets.xcassets */,
 				0070746D20BE472000C6E014 /* LaunchScreen.storyboard */,
@@ -133,9 +162,92 @@
 			path = BDJUITests;
 			sourceTree = "<group>";
 		};
+		00AB970F20C0E2D30072F9C8 /* Setting_设置 */ = {
+			isa = PBXGroup;
+			children = (
+				00AB971020C0E2D30072F9C8 /* Controller */,
+				00AB971120C0E2D30072F9C8 /* Model */,
+				00AB971220C0E2D30072F9C8 /* View */,
+			);
+			path = "Setting_设置";
+			sourceTree = "<group>";
+		};
+		00AB971020C0E2D30072F9C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00AB971320C0E2E90072F9C8 /* ZRSettingViewController.h */,
+				00AB971420C0E2E90072F9C8 /* ZRSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00AB971120C0E2D30072F9C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00AB971220C0E2D30072F9C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00AB971620C120AE0072F9C8 /* AD_广告 */ = {
+			isa = PBXGroup;
+			children = (
+				00AB971720C120AE0072F9C8 /* Controller */,
+				00AB971820C120AE0072F9C8 /* Model */,
+				00AB971920C120AE0072F9C8 /* View */,
+			);
+			path = "AD_广告";
+			sourceTree = "<group>";
+		};
+		00AB971720C120AE0072F9C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00AB971A20C120E20072F9C8 /* ZRADViewController.h */,
+				00AB971B20C120E20072F9C8 /* ZRADViewController.m */,
+				00AB971D20C123FA0072F9C8 /* ZRADViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00AB971820C120AE0072F9C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00AB972A20C152800072F9C8 /* ZRADItem.h */,
+				00AB972B20C152800072F9C8 /* ZRADItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00AB971920C120AE0072F9C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00AB971F20C12B030072F9C8 /* launchImage */ = {
+			isa = PBXGroup;
+			children = (
+				00AB972020C12B030072F9C8 /* LaunchImage-568h@2x.png */,
+				00AB972120C12B030072F9C8 /* LaunchImage-800-667h@2x.png */,
+				00AB972220C12B030072F9C8 /* LaunchImage-800-Portrait-736h@3x.png */,
+				00AB972320C12B030072F9C8 /* LaunchImage-700@2x.png */,
+				00AB972420C12B030072F9C8 /* LaunchImage.png */,
+			);
+			path = launchImage;
+			sourceTree = "<group>";
+		};
 		00BEFB8320BE844E00204029 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				00AB971620C120AE0072F9C8 /* AD_广告 */,
+				00AB970F20C0E2D30072F9C8 /* Setting_设置 */,
 				00BEFBB620BE9B0D00204029 /* Main_主要 */,
 				00BEFB8420BE844E00204029 /* FriendTrend_关注 */,
 				00BEFB8820BE844E00204029 /* Me_我 */,
@@ -217,7 +329,6 @@
 			isa = PBXGroup;
 			children = (
 				00BEFB9120BE844E00204029 /* Controller */,
-				00BEFB9220BE844E00204029 /* Model */,
 				7060E9F620C05E3900B19639 /* Model */,
 				00BEFB9320BE844E00204029 /* View */,
 			);
@@ -231,13 +342,6 @@
 				00BEFBA820BE85BF00204029 /* ZREssenceViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		00BEFB9220BE844E00204029 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		00BEFB9320BE844E00204029 /* View */ = {
@@ -375,6 +479,14 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		537C0CE0D2FE3CAD9EB59F04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF3B2D5607CEDE13786D98ED /* libPods-BDJ.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7060E9F620C05E3900B19639 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +496,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		96BDC38B82BBAABAF5864FBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B1544DF8F8AF24551ED1473 /* Pods-BDJ.debug.xcconfig */,
+				CEEB9454F997921B33B38F25 /* Pods-BDJ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -391,6 +512,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0070748020BE472000C6E014 /* Build configuration list for PBXNativeTarget "BDJ" */;
 			buildPhases = (
+				38D0FC7D949EC52EEE003229 /* [CP] Check Pods Manifest.lock */,
 				0070745B20BE471E00C6E014 /* Sources */,
 				0070745C20BE471E00C6E014 /* Frameworks */,
 				0070745D20BE471E00C6E014 /* Resources */,
@@ -466,8 +588,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0070746F20BE472000C6E014 /* LaunchScreen.storyboard in Resources */,
+				00AB972620C12B040072F9C8 /* LaunchImage-800-667h@2x.png in Resources */,
+				00AB972920C12B040072F9C8 /* LaunchImage.png in Resources */,
 				0070746C20BE472000C6E014 /* Assets.xcassets in Resources */,
+				00AB972520C12B040072F9C8 /* LaunchImage-568h@2x.png in Resources */,
 				0070746A20BE471E00C6E014 /* Main.storyboard in Resources */,
+				00AB972820C12B040072F9C8 /* LaunchImage-700@2x.png in Resources */,
+				00AB971E20C123FA0072F9C8 /* ZRADViewController.xib in Resources */,
+				00AB972720C12B040072F9C8 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +607,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38D0FC7D949EC52EEE003229 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BDJ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0070745B20BE471E00C6E014 /* Sources */ = {
@@ -493,12 +642,15 @@
 				004EB65120BF8E0F0094D5D9 /* ZRTabBar.m in Sources */,
 				00BEFBBC20BE9B2E00204029 /* ZRTabBarController.m in Sources */,
 				00BEFBB520BE85FF00204029 /* ZRFriendTrendViewController.m in Sources */,
+				00AB971520C0E2E90072F9C8 /* ZRSettingViewController.m in Sources */,
 				00BEFBAF20BE85D400204029 /* ZRNewViewController.m in Sources */,
 				00D00FA720BFCD5A00D0F3B1 /* UIView+ZRFrame.m in Sources */,
 				00BEFBB220BE85E800204029 /* ZRMeViewController.m in Sources */,
 				00BEFBA220BE84F000204029 /* main.m in Sources */,
+				00AB972C20C152800072F9C8 /* ZRADItem.m in Sources */,
 				00BEFBC020BEA00700204029 /* UIImage+ZRImage.m in Sources */,
 				00D00FAB20BFEAB700D0F3B1 /* UIBarButtonItem+ZRItem.m in Sources */,
+				00AB971C20C120E20072F9C8 /* ZRADViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,9 +804,11 @@
 		};
 		0070748120BE472000C6E014 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B1544DF8F8AF24551ED1473 /* Pods-BDJ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54HLUGJWUY;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -673,9 +827,11 @@
 		};
 		0070748220BE472000C6E014 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEEB9454F997921B33B38F25 /* Pods-BDJ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54HLUGJWUY;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

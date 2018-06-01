@@ -7,6 +7,11 @@
 //
 
 #import "ZRMeViewController.h"
+#import "ZRSettingViewController.h"
+
+/*
+    搭建基本结构 -> 设置底部条 -> 设置顶部条 -> 设置顶部条字体和图片 -> 设置导航控制器业务逻辑（跳转）
+ */
 
 @interface ZRMeViewController ()
 
@@ -49,6 +54,14 @@
 - (void)setting
 {
     ZRFUNC;
+    ZRSettingViewController * settingVC = [[ZRSettingViewController alloc] init];
+    // 必须在跳转之前设置
+    [self.navigationController pushViewController:settingVC animated:YES];
+    
+    /*
+     1底部条没有隐藏
+     2处理返回按钮样式 ： 去设置控制器设置
+     */
 }
 
 - (void)night:(UIButton *)sender

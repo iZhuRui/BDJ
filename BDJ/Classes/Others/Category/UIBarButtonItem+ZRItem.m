@@ -39,4 +39,20 @@
     return [[UIBarButtonItem alloc] initWithCustomView:containView];
 }
 
++ (UIBarButtonItem *)backItemWithImagename:(NSString *)imageName highlightImagename:(NSString *)highlightImagename target:(id)target action:(SEL)action title:(NSString *)title
+{
+    // 设置导航条左边按钮
+    UIButton * backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backBtn setTitle:title forState:UIControlStateNormal];
+    [backBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [backBtn setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+    [backBtn setImage:ZRImageName(highlightImagename) forState:UIControlStateHighlighted];
+    [backBtn setImage:ZRImageName(imageName) forState:UIControlStateNormal];
+    [backBtn sizeToFit];
+    [backBtn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    backBtn.contentEdgeInsets = UIEdgeInsetsMake(0, -15, 0, 0);
+    
+    return [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+}
+
 @end

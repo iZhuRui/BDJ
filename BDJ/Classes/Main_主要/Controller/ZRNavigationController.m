@@ -8,7 +8,7 @@
 
 #import "ZRNavigationController.h"
 
-@interface ZRNavigationController ()
+@interface ZRNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -31,21 +31,61 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // 假死状态，程序还在运行，但是界面死了
+    
+    // 控制手势什么时候触发，只有非根控制器的时候触发
+//    self.interactivePopGestureRecognizer.delegate = self;
+    
+    // 为什么导航控制器手势不是全屏滑动
+    
+    // 全屏手势
+    UIPanGestureRecognizer * pan = [[UIPanGestureRecognizer alloc] initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
+    
+    [self.view addGestureRecognizer:pan];
+    
+    // 控制手势什么时候触发，只有非根控制器的时候触发
+    pan.delegate = self;
+    
+    // 禁止之前的手势
+    self.interactivePopGestureRecognizer.enabled = NO;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    ZRFUNC;
+    
+    if (self.childViewControllers.count > 0) {
+        
+        // 恢复滑动返回功能 -> 分析：把系统的返回按钮覆盖 -> 1.手势失效（1.手势被清空 2.可能手势代理做了其他事，导致失效）
+        
+        // 设置返回按钮，只有非根控制器
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem backItemWithImagename:@"navigationButtonReturn" highlightImagename:@"navigationButtonReturnClick" target:self action:@selector(back) title:@"返回"];
+    }
+    
+    // 真正的在跳转
+    [super pushViewController:viewController animated:animated];
 }
 
+- (void)back
+{
+    [self popViewControllerAnimated:YES];
+}
+
+// 决定是否触发手势
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+{
+    return self.childViewControllers.count > 1;
+}
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ 
+ <_UINavigationInteractiveTransition 0x11be11480>手势代理
+ 
+ UIScreenEdgePanGestureRecognizer:导航滑动手势
+ target:<_UINavigationInteractiveTransition 0x11be11480>
+ action:handleNavigationTransition
+ 
+ <UIScreenEdgePanGestureRecognizer: 0x11be11970; state = Possible; delaysTouchesBegan = YES; view = <UILayoutContainerView 0x11be10840>; target= <(action=handleNavigationTransition:, target=<_UINavigationInteractiveTransition 0x11be11480>)>>
+ */
 
 @end

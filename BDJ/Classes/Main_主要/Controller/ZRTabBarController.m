@@ -94,6 +94,8 @@
 
 - (void)setupChildViewController
 {
+    // initWithRootViewController就会调用pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+    
     // 精华
     ZREssenceViewController * essenceVC = [[ZREssenceViewController alloc] init];
     ZRNavigationController * nav1 = [[ZRNavigationController alloc] initWithRootViewController:essenceVC];

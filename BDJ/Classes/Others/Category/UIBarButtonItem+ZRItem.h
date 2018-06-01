@@ -15,4 +15,6 @@
 
 + (UIBarButtonItem *)itemWithImagename:(NSString *)imageName selectImagename:(NSString *)selectImagename target:(id)target action:(SEL)action;
 
++ (UIBarButtonItem *)backItemWithImagename:(NSString *)imageName highlightImagename:(NSString *)highlightImagename target:(id)target action:(SEL)action title:(NSString *)title;
+
 @end
