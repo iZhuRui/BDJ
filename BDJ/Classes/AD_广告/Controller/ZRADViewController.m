@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (nonatomic, weak) UIImageView * adView;
 @property (nonatomic, strong) ZRADItem * item;
+@property (weak, nonatomic) IBOutlet UIButton *passBtn;
 @end
 
 @implementation ZRADViewController
@@ -65,6 +66,16 @@
     
     // 加载广告数据
     [self setupADData];
+    
+    // 创建定时器
+    // 参数一(NSTimeInterval)多久触发一次
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeChange) userInfo:nil repeats:YES];
+}
+
+// 倒计时
+- (void)timeChange
+{
+    
 }
 
 // 设置启动图片
@@ -157,6 +168,14 @@
         [application openURL:url];
     }
     ZRFUNC;
+}
+
+/*
+ NSTimer 和 cadisplaylink
+ 如果点击频率比较高，一般用cadisplaylink，它的优先级比较高
+ 相反，则用NSTimer
+ */
+- (IBAction)passBtnClick:(UIButton *)sender {
 }
 
 @end
